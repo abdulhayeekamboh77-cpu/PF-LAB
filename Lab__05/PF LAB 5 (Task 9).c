@@ -26,6 +26,7 @@ int main()
 		if (Square_Root_Number >= 0)
 		{
 			 printf("The square root is %.2f\n", sqrt(Square_Root_Number));
+			 break;
 		}
 		else 
 		{

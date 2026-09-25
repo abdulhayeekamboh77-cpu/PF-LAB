@@ -1,3 +1,7 @@
+/* Porgramer: Abdul Hayee Kamboh
+Section: BSAI-1A
+Roll No#: 26k-0026
+*/
 #include <stdio.h>
 int main(){
     int Age, Monthlyincome, Creditscore;

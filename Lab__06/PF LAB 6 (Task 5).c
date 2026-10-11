@@ -6,18 +6,15 @@ int main() {
 
     printf("Enter n: ");
     scanf("%d", &n);
-
-    // (2n)! nikalna
+    
     for (i = 1; i <= 2 * n; i++) {
         fact_2n = fact_2n * i;
     }
 
-    // (n+1)! nikalna
     for (i = 1; i <= n + 1; i++) {
         fact_n1 = fact_n1 * i;
     }
 
-    // n! nikalna
     for (i = 1; i <= n; i++) {
         fact_n = fact_n * i;
     }

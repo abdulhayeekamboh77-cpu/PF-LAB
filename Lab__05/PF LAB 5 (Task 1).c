@@ -1,7 +1,7 @@
-/* Porgramer: Abdul Hayee Kamboh
-Section: BSAI-1A
-Roll No#: 26k-0026
-*/
+/*Programmer: Abdul Hayee Kamboh
+Roll No: 26K-0026
+Section: BSAI-1A*/
+
 #include <stdio.h>
 int main(){
 	// Enter Marks Of The Following Subject //

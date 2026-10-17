@@ -1,5 +1,8 @@
-#include <stdio.h>
+/*Programmer: Abdul Hayee Kamboh
+Roll No: 26K-0026
+Section: BSAI-1A*/
 
+#include <stdio.h>
 int main() {
     int i, status;
     int present = 0, absent = 0;

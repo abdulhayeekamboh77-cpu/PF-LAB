@@ -3,11 +3,13 @@ Roll No: 26K-0026
 Section: BSAI-1A*/
 
 #include <stdio.h>
-int main() {
+int main() 
+{
     char logs[3][30];
     int i, j;
     int uppercase_count = 0;
-    for (i = 0; i < 3; i++) {
+    for (i = 0; i < 3; i++) 
+	{
         printf("Enter CSV log entry %d (username,status,timestamp): ", i + 1);
         scanf(" %29[^,],%29[^,],%29[^\n]",
               logs[0], logs[1], logs[2]);

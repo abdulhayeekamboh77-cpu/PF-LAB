@@ -4,7 +4,8 @@ Section: BSAI-1A*/
 
 #include <stdio.h>
 #include <string.h>
-int main() {
+int main() 
+{
     char word_grid[3][100];
     char word[100];
     char longest_word[100] = "";

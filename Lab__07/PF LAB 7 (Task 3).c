@@ -3,7 +3,8 @@ Roll No: 26K-0026
 Section: BSAI-1A*/
 
 #include <stdio.h>
-int main() {
+int main() 
+{
     char secret_messages[3][100];
     int i, j;
     int spaces, words;

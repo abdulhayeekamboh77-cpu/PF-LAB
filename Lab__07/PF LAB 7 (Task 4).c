@@ -6,52 +6,46 @@ Section: BSAI-1A*/
 int main() 
 {
     char word_grid[3][100];
-    char word[100], longest[100];
-    int i, j, k, len, max = 0;
-    int row = 0, column = 0;
-    for (i = 0; i < 3; i++) 
+    char longest[100];
+    int maxLen = 0, maxRow = -1, maxCol = -1;
+    printf("Enter 3 lines, each with 3 space-separated words:\n");
+    for (int i = 0; i < 3; i++) 
 	{
-        printf("Enter 3 words for row %d: ", i);
-        scanf(" %[^\n]", word_grid[i]);
+        scanf(" %99[^\n]", word_grid[i]);
     }
-    for (i = 0; i < 3; i++) 
+    for (int i = 0; i < 3; i++) 
 	{
-        j = 0;
-        int col = 0;
-        while (word_grid[i][j] != '\0') 
+        int k = 0;
+        int j = 0;
+        while (word_grid[i][k] != '\0') 
 		{
-            if (word_grid[i][j] == ' ') 
-			{
-                j++;
-                continue;
-            }
-            k = 0;
-            len = 0;
-            while (word_grid[i][j] != ' ' &&
-                   word_grid[i][j] != '\0') 
-			{
-                word[k] = word_grid[i][j];
+            while (word_grid[i][k] == ' ')
                 k++;
-                len++;
-                j++;
-            }
-            word[k] = '\0';
-            if (len > max) 
+            if (word_grid[i][k] == '\0')
+                break;
+            int start = k;
+            int len = 0;
+            while (word_grid[i][k] != ' ' && word_grid[i][k] != '\0') 
 			{
-                max = len;
-                row = i;
-                column = col;
-                for (k = 0; k <= len; k++) 
-				{
-                    longest[k] = word[k];
-                }
+                len++;
+                k++;
             }
-            col++;
+            if (len > maxLen) 
+			{
+                maxLen = len;
+                maxRow = i;
+                maxCol = j;
+                for (int m = 0; m < len; m++)
+                    longest[m] = word_grid[i][start + m];
+                longest[len] = '\0';
+            }
+            j++;
         }
     }
-    printf("\nLongest word: %s\n", longest);
-    printf("Length: %d\n", max);
-    printf("Row Index: %d\n", row);
-    printf("Column Index: %d\n", column);
+    printf("\nLongest word : %s\n", longest);
+    printf("Length       : %d\n", maxLen);
+    printf("Row Index (i): %d\n", maxRow);
+    printf("Col Index (j): %d\n", maxCol);
     return 0;
 }
+

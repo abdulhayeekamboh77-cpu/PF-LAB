@@ -1,9 +1,9 @@
 /*Programmer: Abdul Hayee Kamboh
 Roll No: 26K-0026
 Section: BSAI-1A*/
+
 #include <stdio.h>
 #include <stdlib.h>
-
 int main() 
 {
     int n, i, total = 0, minIdx = 0;

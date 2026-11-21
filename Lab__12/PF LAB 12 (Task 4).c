@@ -4,7 +4,6 @@ Section: BSAI-1A*/
 
 #include <stdio.h>
 #include <stdlib.h>
-
 int main() 
 {
     int n, i;

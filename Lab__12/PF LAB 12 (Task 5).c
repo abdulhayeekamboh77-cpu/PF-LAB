@@ -5,7 +5,6 @@ Section: BSAI-1A*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 int getCategory(char ch) 
 {
     unsigned char c = (unsigned char)ch;
@@ -103,7 +102,8 @@ int main()
     printf("\n--- Similarity Results ---\n");
     for (i = 0; i < n; i++) {
         printf("Participant %d (%s): %.2f%%\n", i + 1, attempts[i], scores[i]);
-        if (scores[i] > scores[bestIdx]) {
+        if (scores[i] > scores[bestIdx]) 
+        {
             bestIdx = i;
         }
     }

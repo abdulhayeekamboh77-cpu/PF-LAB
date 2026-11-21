@@ -5,7 +5,6 @@ Section: BSAI-1A*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 int containsDigit(char *str) 
 {
     while (*str != '\0') 
